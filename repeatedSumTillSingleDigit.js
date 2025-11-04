@@ -36,3 +36,17 @@ function main () {
     
     
 }
+function sumTillSingle(repeatedSum) {
+    let sum = 0;
+    
+    while(repeatedSum>0){
+        let remainder = repeatedSum%10;
+        sum += remainder;
+        repeatedSum = Math.floor(repeatedSum/10);
+    }
+    
+    return sum;
+    
+}
+
+main()
